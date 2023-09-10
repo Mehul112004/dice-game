@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    background-color: #2d3b52cf;
+    color:#57924dc6
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    gap: 3em;
+}
+.game{
+    display: flex;
+    gap: 2em;
+}
+.player-1, .player-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-family: 'Lobster', cursive;
+    font-size:4rem;
+}
+h2{
+    font-family:'Indie flower',cursive;
+}
+img{
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+button{
+    width: 5.5rem;
+    height: 3rem;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(140, 71, 140);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+button:active{
+    background-color: rgba(110, 19, 110, 0.696);
+}
+.hidden1,.hidden2{
+    display: none;
+}
+.winner{
+    display: initial;
+}
+h3{
+    color: rgba(242, 255, 205, 0.799);
+    font-weight: bolder;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+@media (max-width:620px){
+    .container{
+        flex-flow: column nowrap;
+        height: 100%;
+        gap:1rem;
+        justify-content: center;
+        align-content: center;
+    }
+    .game{
+        flex-direction: column;
+        font-size:2rem;
+        gap: 0.5rem;
+    }
+    img{
+        width: 100px;
+        height: 100px;
+        margin-top: 0.3rem;
+        margin-bottom: 0.3rem;
+    }
+    h3{
+        font-size:small;
+    }
+}
