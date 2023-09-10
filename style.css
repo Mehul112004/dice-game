@@ -35,6 +35,7 @@ h2{
     font-family:'Indie flower',cursive;
 }
 img{
+    width: 200px;
     margin-top: 2em;
     margin-bottom: 1em;
 }
@@ -78,8 +79,8 @@ h3{
         gap: 0.5rem;
     }
     img{
-        width: 100px;
-        height: 100px;
+        width: 2.9em;
+        height: auto;
         margin-top: 0.3rem;
         margin-bottom: 0.3rem;
     }
